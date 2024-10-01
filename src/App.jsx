@@ -16,15 +16,16 @@ function App() {
             <Route path="/blog" element={<Blog />} />
           </Routes>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-0 w-[500px] h-[500px] items-center justify-center">
-  <img src="/a.jpg" alt="Image 1" className="h-full w-full object-cover" />
-  <img src="/b.jpg" alt="Image 2" className="h-full w-full object-cover" />
-  <img src="/c.jpg" alt="Image 3" className="h-full w-full object-cover" />
-  <img src="/e.jpg" alt="Image 4" className="h-full w-full object-cover" />
-</div>
+        
       </div>
-      
+      <div className="flex flex-row place-content-center justify-center gap-0 w-[100%] h-[30vh]">
+            <img src="/a.jpg" alt="Image 1" className="h-full w-full object-cover" />
+            <img src="/e.jpg" alt="Image 2" className="h-full w-full object-cover" />
+            <img src="/b.jpg" alt="Image 3" className="h-full w-full object-cover" />
+            <img src="/c.jpg" alt="Image 4" className="h-full w-full object-cover" />
+          </div>
     </Router>
+    
   );
 }
 
