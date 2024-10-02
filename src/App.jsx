@@ -22,7 +22,7 @@ function Main() {
 
       {/* Conditionally render the images only if the current path is not /myself or /blog */}
       {location.pathname !== "/myself" && location.pathname !== "/blog" && (
-        <div className="grid grid-cols-4 gap-0 w-[100%] h-[70vh]">
+        <div className="grid grid-cols-4 gap-0 w-[110%] h-[80vh] rounded-xl overflow-hidden">
         <img src="/a.jpg" alt="Image 1" className="h-full w-full object-cover" />
         <img src="/e.jpg" alt="Image 2" className="h-full w-full object-cover" />
         <img src="/b.jpg" alt="Image 3" className="h-full w-full object-cover" />
@@ -34,7 +34,7 @@ function Main() {
         <img src="/ney1.jpg" alt="Image 9" className="h-full w-full object-cover" />
         <img src="/ney2.jpg" alt="Image 10" className="h-full w-full object-cover" />
         <img src="/ney3.jpg" alt="Image 11" className="h-full w-full object-cover" />
-        <img src="/ney4.jpg" alt="Image 12" className="h-full w-full object-cover" />
+        <img src="/ney4.jpg" alt="Image 12" className="h-full w-full object-cover sepia-[.7]" />
       </div>
       
       )}
