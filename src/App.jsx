@@ -22,7 +22,7 @@ function Main() {
 
       {/* Conditionally render the images only if the current path is not /myself or /blog */}
       {location.pathname !== "/myself" && location.pathname !== "/blog" && (
-        <div className="grid grid-cols-3 gap-0 w-[100%] h-[120vh]">
+        <div className="grid grid-cols-4 gap-0 w-[100%] h-[70vh]">
         <img src="/a.jpg" alt="Image 1" className="h-full w-full object-cover" />
         <img src="/e.jpg" alt="Image 2" className="h-full w-full object-cover" />
         <img src="/b.jpg" alt="Image 3" className="h-full w-full object-cover" />
