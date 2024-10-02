@@ -10,7 +10,7 @@ function Main() {
 
   return (
     <>
-      <div className="bg-gray-100">
+      <div className="0">
         <Navbar />
         <div className="p-8">
           <Routes>
