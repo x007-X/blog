@@ -22,12 +22,21 @@ function Main() {
 
       {/* Conditionally render the images only if the current path is not /myself or /blog */}
       {location.pathname !== "/myself" && location.pathname !== "/blog" && (
-        <div className="flex flex-row place-content-center justify-center gap-0 w-[100%] h-[30vh]">
-          <img src="/a.jpg" alt="Image 1" className="h-full w-full object-cover" />
-          <img src="/e.jpg" alt="Image 2" className="h-full w-full object-cover" />
-          <img src="/b.jpg" alt="Image 3" className="h-full w-full object-cover" />
-          <img src="/c.jpg" alt="Image 4" className="h-full w-full object-cover" />
-        </div>
+        <div className="grid grid-cols-3 gap-0 w-[100%] h-[120vh]">
+        <img src="/a.jpg" alt="Image 1" className="h-full w-full object-cover" />
+        <img src="/e.jpg" alt="Image 2" className="h-full w-full object-cover" />
+        <img src="/b.jpg" alt="Image 3" className="h-full w-full object-cover" />
+        <img src="/c.jpg" alt="Image 4" className="h-full w-full object-cover" />
+        <img src="/lm1.jpg" alt="Image 5" className="h-full w-full object-cover" />
+        <img src="/lm2.jpg" alt="Image 6" className="h-full w-full object-cover" />
+        <img src="/lm3.jpg" alt="Image 7" className="h-full w-full object-cover" />
+        <img src="/lm4.jpg" alt="Image 8" className="h-full w-full object-cover" />
+        <img src="/ney1.jpg" alt="Image 9" className="h-full w-full object-cover" />
+        <img src="/ney2.jpg" alt="Image 10" className="h-full w-full object-cover" />
+        <img src="/ney3.jpg" alt="Image 11" className="h-full w-full object-cover" />
+        <img src="/ney4.jpg" alt="Image 12" className="h-full w-full object-cover" />
+      </div>
+      
       )}
     </>
   );
