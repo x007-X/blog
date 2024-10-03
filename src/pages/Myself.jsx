@@ -2,19 +2,16 @@ import React, { useState, useEffect } from 'react';
 
 const Myself = () => {
   const [slideIndex, setSlideIndex] = useState(0);
-  const slides = ['/s1.jpg', '/s2.jpg', '/s3.jpg', '/s4.jpg', '/s5.jpg'];
+  const slides = ['/s1.jpg', '/s2.jpg', '/s3.jpg', '/s4.jpg', '/s5.jpg','/s6.jpg','/s7.jpg','/s8.jpg','/s9.jpg','/s10.jpg','/s11.jpg'];
 
+  // Automatic slideshow effect every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 3000); // Change slide every 3 seconds
 
-    return () => clearInterval(interval); // Clear interval on component unmount
+    return () => clearInterval(interval); // Cleanup on component unmount
   }, [slides.length]);
-
-  const plusSlides = (n) => {
-    setSlideIndex((prevIndex) => (prevIndex + n + slides.length) % slides.length);
-  };
 
   return (
     <div>
@@ -24,25 +21,17 @@ const Myself = () => {
       </p>
 
       {/* Slideshow Component */}
-      <div className="slideshow-container relative w-full max-w-screen-lg mx-auto overflow-hidden my-6">
+      <div className="slideshow-container relative w-[800px] h-[400px] mx-auto overflow-hidden my-6 rounded-xl">
         {slides.map((slide, index) => (
-          <div key={index} className={`slide ${index === slideIndex ? '' : 'hidden'}`}>
-            <img src={slide} alt={`Image ${index + 1}`} className="w-full h-auto" />
+          <div
+            key={index}
+            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-[1500ms] ease-in-out ${
+              index === slideIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img src={slide} alt={`Image ${index + 1}`} className="w-full h-full object-cover" />
           </div>
         ))}
-        
-        <a
-          className="prev absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl font-bold cursor-pointer select-none"
-          onClick={() => plusSlides(-1)}
-        >
-          &#10094;
-        </a>
-        <a
-          className="next absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl font-bold cursor-pointer select-none"
-          onClick={() => plusSlides(1)}
-        >
-          &#10095;
-        </a>
       </div>
 
       <h2 className="mt-6 text-2xl font-semibold text-gray-800">The Instruments of My Craft</h2>
