@@ -21,11 +21,11 @@ const Myself = () => {
       </p>
 
       {/* Slideshow Component */}
-      <div className="slideshow-container relative w-[800px] h-[400px] mx-auto overflow-hidden my-6 rounded-xl">
+      <div className="slideshow-container relative w-[800px] h-[400px] mx-auto overflow-hidden my-6 rounded-3xl">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-[1500ms] ease-in-out ${
+            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-[1500ms] ease-in-out  ${
               index === slideIndex ? 'opacity-100' : 'opacity-0'
             }`}
           >
