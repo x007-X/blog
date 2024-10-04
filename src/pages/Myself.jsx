@@ -8,7 +8,7 @@ const Myself = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 3000); // Change slide every 3 seconds
+    }, 2000); // Change slide every 3 seconds
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, [slides.length]);
@@ -18,6 +18,9 @@ const Myself = () => {
       <h2 className="text-3xl font-bold text-gray-800">About Myself</h2>
       <p className="mt-4 text-gray-600">
         I walk a path where the boundaries between technology and human thought blur. The lure of AGI, the mysteries of space, and the promise of fusion energy—these fascinate me not because of their finality, but because they represent the unknown, the unconquered. My work in web development is, at its core, an extension of this desire to understand, to create meaning in a world driven by logic yet guided by emotion. Through code, I build not just applications, but windows into the mind.
+      </p>
+      <p className="mt-4 text-gray-600">
+        The lure of AGI, the mysteries of space, and the promise of fusion energy—these fascinate me not because of their finality, but because they represent the unknown, the unconquered.
       </p>
 
       {/* Slideshow Component */}
