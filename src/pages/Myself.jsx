@@ -25,7 +25,9 @@ const Myself = () => {
       <p className="mt-4 text-gray-600">
          My work in web development is, at its core, an extension of this desire to understand, to create meaning in a world driven by logic yet guided by emotion.
       </p>
-
+      <p className='mt-4 text-gray-600'>
+      Through code, I build not just applications, but windows into the mind.
+      </p>
       {/* Slideshow Component */}
       <div className="slideshow-container relative w-[800px] h-[400px] mx-auto overflow-hidden my-6 rounded-3xl">
         {slides.map((slide, index) => (
