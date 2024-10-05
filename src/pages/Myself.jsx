@@ -42,7 +42,7 @@ const Myself = () => {
         ))}
       </div>
 
-      <h2 className="mt-10 text-2xl font-semibold text-gray-800">The Instruments of My Craft</h2>
+      <h2 className="mt-10 text-2xl font-bold text-gray-800">The Instruments of My Craft</h2>
       <ul className="mt-10 text-gray-600 list-inside pl-4 flex justify-center items-center flex-wrap space-x-4 text-center">
   <li>🐍 Python</li>
   <li>💻 C</li>
