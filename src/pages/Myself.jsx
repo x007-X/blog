@@ -22,7 +22,7 @@ const Myself = () => {
       <p className="mt-5 text-gray-600">
         The lure of AGI, the mysteries of space, and the promise of fusion energy—these fascinate me not because of their finality, but because they represent the unknown, the unconquered.
       </p>
-      <p className="mt-4 text-gray-600">
+      <p className="mt-5 text-gray-600">
          My work in web development is, at its core, an extension of this desire to understand, to create meaning in a world driven by logic yet guided by emotion.
       </p>
       <p className='mt-4 text-gray-600'>
