@@ -16,7 +16,7 @@ const Myself = () => {
   return (
     <div>
       <h2 className="text-3xl font-bold text-gray-800">About Myself</h2>
-      <p className="mt-4 text-gray-600">
+      <p className="mt-5 text-gray-600">
         I walk a path where the boundaries between technology and human thought blur.
       </p>
       <p className="mt-4 text-gray-600">
