@@ -19,7 +19,7 @@ const Myself = () => {
       <p className="mt-5 text-gray-600">
         I walk a path where the boundaries between technology and human thought blur.
       </p>
-      <p className="mt-4 text-gray-600">
+      <p className="mt-5 text-gray-600">
         The lure of AGI, the mysteries of space, and the promise of fusion energy—these fascinate me not because of their finality, but because they represent the unknown, the unconquered.
       </p>
       <p className="mt-4 text-gray-600">
