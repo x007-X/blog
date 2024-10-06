@@ -8,6 +8,7 @@ import UnderstandingAGI from './pages/BlogPost1'; // Import individual blog post
 import MysteriesOfSpace from './pages/BlogPost2';
 import FusionEnergyRevolution from './pages/BlogPost3';
 
+
 function Main() {
   const location = useLocation(); // Inside Router context
 
@@ -25,7 +26,7 @@ function Main() {
       </div>
 
       {/* Conditionally render images only if not on /myself or /blog */}
-      {location.pathname !== "/myself" && location.pathname !== "/blog" && (
+      {location.pathname == "/" && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto h-[80vh] rounded-3xl overflow-hidden">
           <img src="/a.jpg" alt="Image 1" className="h-full w-full object-cover" />
           <img src="/e.jpg" alt="Image 2" className="h-full w-full object-cover" />
