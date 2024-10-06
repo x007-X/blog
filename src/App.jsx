@@ -4,9 +4,12 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Myself from './pages/Myself';
 import Blog from './pages/Blog';
+import UnderstandingAGI from './pages/BlogPost1'; // Import individual blog post pages
+import MysteriesOfSpace from './pages/BlogPost2';
+import FusionEnergyRevolution from './pages/BlogPost3';
 
 function Main() {
-  const location = useLocation(); // Now correctly inside Router context
+  const location = useLocation(); // Inside Router context
 
   return (
     <>
@@ -15,10 +18,13 @@ function Main() {
         <Routes>
           <Route path="/myself" element={<Myself />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/understanding-agi" element={<UnderstandingAGI />} />
+          <Route path="/blog/mysteries-of-space" element={<MysteriesOfSpace />} />
+          <Route path="/blog/fusion-energy-revolution" element={<FusionEnergyRevolution />} />
         </Routes>
       </div>
 
-      {/* Conditionally render the images only if the current path is not /myself or /blog */}
+      {/* Conditionally render images only if not on /myself or /blog */}
       {location.pathname !== "/myself" && location.pathname !== "/blog" && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto h-[80vh] rounded-3xl overflow-hidden">
           <img src="/a.jpg" alt="Image 1" className="h-full w-full object-cover" />
@@ -42,7 +48,7 @@ function Main() {
 function App() {
   return (
     <Router>
-      <Main /> {/* Moved the conditional logic into Main */}
+      <Main /> {/* Moved conditional logic into Main */}
     </Router>
   );
 }
