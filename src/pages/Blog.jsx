@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Blog = () => {
   const blogPosts = [
-    { id: 1, title: 'Understanding AGI', date: '2024-10-01', link: './BlogPost1.jsx' },
-    { id: 2, title: 'The Mysteries of Space', date: '2024-09-28', link: './BlogPost2.jsx' },
-    { id: 3, title: 'Fusion Energy Revolution', date: '2024-09-15', link: './BlogPost3.jsx' },
+    { id: 1, title: 'Understanding AGI', date: '2024-10-01', link: '/blogpost1' },
+    { id: 2, title: 'The Mysteries of Space', date: '2024-09-28', link: '/blogpost2' },
+    { id: 3, title: 'Fusion Energy Revolution', date: '2024-09-15', link: '/blogpost3' },
   ].sort((a, b) => b.id - a.id); // Sort by ID in descending order
 
   return (

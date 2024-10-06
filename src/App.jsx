@@ -18,9 +18,9 @@ function Main() {
         <Routes>
           <Route path="/myself" element={<Myself />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/understanding-agi" element={<UnderstandingAGI />} />
-          <Route path="/blog/mysteries-of-space" element={<MysteriesOfSpace />} />
-          <Route path="/blog/fusion-energy-revolution" element={<FusionEnergyRevolution />} />
+          <Route path="/blogpost1" element={<UnderstandingAGI />} />
+          <Route path="/blogpost2" element={<MysteriesOfSpace />} />
+          <Route path="/blogpost3" element={<FusionEnergyRevolution />} />
         </Routes>
       </div>
 
