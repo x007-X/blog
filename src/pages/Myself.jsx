@@ -44,15 +44,15 @@ const Myself = () => {
 
       <h2 className="mt-10 text-2xl font-bold text-gray-800">The Instruments of My Craft</h2>
       <ul className="mt-10 text-gray-600 list-inside pl-4 flex justify-center items-center flex-wrap space-x-4 text-center">
-  <li>🐍 Python</li>
-  <li>💻 C</li>
-  <li>⚛️ React</li>
-  <li>🌐 HTML</li>
-  <li>🎨 CSS</li>
-  <li>✨ JavaScript</li>
-  <li>🔗 Next.js</li>
-  <li>🖼️ Vue</li>
-  <li>🛢️ MySQL</li>
+  <li> Python</li>
+  <li>C</li>
+  <li> React</li>
+  <li>HTML</li>
+  <li> CSS</li>
+  <li> JavaScript</li>
+  <li> Next.js</li>
+  <li> Vue</li>
+  <li> MySQL</li>
 </ul>
 
 
