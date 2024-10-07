@@ -16,16 +16,16 @@ const Myself = () => {
   return (
     <div>
       <h2 className="text-3xl font-bold text-gray-800">About Myself</h2>
-      <p className="mt-5 text-gray-600">
+      <p className="mt-6 text-gray-600">
         I walk a path where the boundaries between technology and human thought blur.
       </p>
-      <p className="mt-5 text-gray-600">
+      <p className="mt-6 text-gray-600">
         The lure of AGI, the mysteries of space, and the promise of fusion energy—these fascinate me not because of their finality, but because they represent the unknown, the unconquered.
       </p>
-      <p className="mt-5 text-gray-600">
+      <p className="mt-6 text-gray-600">
          My work in web development is, at its core, an extension of this desire to understand, to create meaning in a world driven by logic yet guided by emotion.
       </p>
-      <p className='mt-5 text-gray-600'>
+      <p className='mt-6 text-gray-600'>
       Through code, I build not just applications, but windows into the mind.
       </p>
       {/* Slideshow Component */}
