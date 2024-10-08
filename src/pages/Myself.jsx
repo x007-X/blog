@@ -8,7 +8,7 @@ const Myself = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 2000); // Change slide every 3 seconds
+    }, 1000); // Change slide every 3 seconds
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, [slides.length]);
