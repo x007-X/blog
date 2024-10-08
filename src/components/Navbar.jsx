@@ -18,7 +18,7 @@ const Navbar = () => {
             </h1>
             <Link 
               to="/blog"
-              className="inline-flex items-center text-sm font-medium text-gray-00 hover:text-gray-700 transition duration-200"
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-700 transition duration-200"
             >
               Blog (👨‍💻)
             </Link>
