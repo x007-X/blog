@@ -9,7 +9,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-8">
             <Link 
               to="/myself"
-              className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-700 transition duration-200"
+              className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-700 transition duration-200"
             >
               (🏎️) Me
             </Link>
@@ -18,7 +18,7 @@ const Navbar = () => {
             </h1>
             <Link 
               to="/blog"
-              className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 transition duration-200"
+              className="inline-flex items-center text-sm font-medium text-gray-00 hover:text-gray-700 transition duration-200"
             >
               Blog (👨‍💻)
             </Link>
